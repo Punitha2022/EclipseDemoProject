@@ -13,6 +13,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class UpdateDemo {
 	public static void main(String[] args) {
+		System.out.println("In udpateDemo");
 		MongoClient client = MongoClients.create("mongodb://localhost:27017");
 		MongoDatabase database = client.getDatabase("trial");
 		MongoCollection<Document> collection = database.getCollection("users");
